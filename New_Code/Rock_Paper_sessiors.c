@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 int main(){
     int User_Choice, Comp_choice;
     printf("Enter Your choice\n0 for Rock,\n1 for paper\n2 for scissors\n");
     scanf("%d",&User_Choice);
-
+    srand(time(NULL));
     Comp_choice = rand() % 3 ;//want number between only 0-2
     switch (Comp_choice)
     {
